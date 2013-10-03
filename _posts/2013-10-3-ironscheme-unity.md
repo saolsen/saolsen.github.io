@@ -7,7 +7,7 @@ title: Using Ironscheme with Unity
 
 Ironscheme works with unity. First download Ironscheme from codeplex. Start IronScheme.Console-v2.exe (either directly or with mono) and run (compile-system-libraries). This is necessary because we need compiled dll's of the standard libraries to run in unity as a compiled build won't be able to read them from the scheme files. (At least not until I finish some tooling I'm working on). Once the files are done downloading copy all the .dll's (including IronScheme.dll) to a folder in the Assets directory of your unity project. You also must go into Edit -> Project Settings -> Player and under Other Settings / Optimization set Api compatibility level to .NET 2.0.
 
-# Evaluating Scheme expressions from C#
+# Evaluating Scheme expressions from CSharp
 
 Evaluating scheme from a c# script is easy.
 
@@ -29,7 +29,7 @@ Calling unity code from scheme is done using ironscheme's interop primitives. Th
 
 You can not directly create a MonoBehavior class from ironscheme so using it in the unity framework is slightly different than using C# or Javascript. What  you can do is create ironscheme libraries that can be called from c# and use that concept to create monobehaviors that call scheme code.
 
-# Evaluating Scheme libraries from C#
+# Evaluating Scheme libraries from CSharp
 
 The best way I've found so far to write functionality in scheme and evaluate it on a gameobject is to create a scheme library and consume it from a monobehavior. Here's an example of how to do this. Create a Resources folder in your assets somewhere and make a scheme file in it called testlib.txt (yes txt) Then create a new c# script called TestLibrary.cs Here are their definitions.
 
