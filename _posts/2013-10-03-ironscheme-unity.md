@@ -27,7 +27,7 @@ Calling unity code from scheme is done using ironscheme's interop primitives. Th
 (clr-static-call Debug Log "log message")
 ```
 
-You can not directly create a MonoBehavior class from ironscheme so using it in the unity framework is slightly different than using C# or Javascript. What  you can do is create ironscheme libraries that can be called from c# and use that concept to create monobehaviors that call scheme code.
+You can not directly create a MonoBehavior class from ironscheme so using it in the unity framework is slightly different than using C# or Javascript. What  you can do is create ironscheme libraries that can be called from csharp and use that concept to create monobehaviors that call scheme code.
 
 # Evaluating Scheme libraries from csharp
 
@@ -73,7 +73,7 @@ public class TestLibrary : MonoBehaviour {
 }
 ```
 
-You can use this method to capture references to scheme code in c# and call them. This is preferred over calling the functions directly with Eval for performance reasons. This works but isn't a great way to work with the scheme files. For one they are not exactly valid library files on their own and can't be loaded as a library from the repl. They are also hard to debug and don't work outside the context of the unity project because they reference the UnityEngine.dll. It does work however for evaluating scheme code in unity and is a good enough starting point.
+You can use this method to capture references to scheme code in csharp and call them. This is preferred over calling the functions directly with Eval for performance reasons. This works but isn't a great way to work with the scheme files. For one they are not exactly valid library files on their own and can't be loaded as a library from the repl. They are also hard to debug and don't work outside the context of the unity project because they reference the UnityEngine.dll. It does work however for evaluating scheme code in unity and is a good enough starting point.
 
 # Next Steps
 
