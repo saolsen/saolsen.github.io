@@ -3,8 +3,6 @@ layout: post_page
 title: Using Ironscheme with Unity
 ---
 
-### Setup
-
 Ironscheme works with unity. First download Ironscheme from codeplex. Start IronScheme.Console-v2.exe (either directly or with mono) and run (compile-system-libraries). This is necessary because we need compiled dll's of the standard libraries to run in unity as a compiled build won't be able to read them from the scheme files. (At least not until I finish some tooling I'm working on). Once the files are done downloading copy all the .dll's (including IronScheme.dll) to a folder in the Assets directory of your unity project. You also must go into Edit -> Project Settings -> Player and under Other Settings / Optimization set Api compatibility level to .NET 2.0.
 
 ### Evaluating Scheme expressions from csharp
