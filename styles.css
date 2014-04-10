@@ -4,7 +4,6 @@ body {
   font: bold 1em sans-serif;
   color: #fff;
   -webkit-text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-  -moz-text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   background: #ff3232;
   background: -moz-linear-gradient(-45deg, #ff3232 0%, #ffa230 12%, #fbff30 25%, #30ff5d 39%, #30ffd9 50%, #30acff 64%, #6430ff 77%, #a230ff 88%, #ff00b2 100%);
