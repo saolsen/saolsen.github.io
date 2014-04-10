@@ -1,0 +1,23 @@
+body {
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  font: bold 1em sans-serif;
+  color: #fff;
+  background: #ff3232;
+  background: -moz-linear-gradient(-45deg, #ff3232 0%, #ffa230 12%, #fbff30 25%, #30ff5d 39%, #30ffd9 50%, #30acff 64%, #6430ff 77%, #a230ff 88%, #ff00b2 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff3232), color-stop(12%,#ffa230), color-stop(25%,#fbff30), color-stop(39%,#30ff5d), color-stop(50%,#30ffd9), color-stop(64%,#30acff), color-stop(77%,#6430ff), color-stop(88%,#a230ff), color-stop(100%,#ff00b2));
+  background: -webkit-linear-gradient(-45deg, #ff3232 0%,#ffa230 12%,#fbff30 25%,#30ff5d 39%,#30ffd9 50%,#30acff 64%,#6430ff 77%,#a230ff 88%,#ff00b2 100%);
+  background: -o-linear-gradient(-45deg, #ff3232 0%,#ffa230 12%,#fbff30 25%,#30ff5d 39%,#30ffd9 50%,#30acff 64%,#6430ff 77%,#a230ff 88%,#ff00b2 100%);
+  background: -ms-linear-gradient(-45deg, #ff3232 0%,#ffa230 12%,#fbff30 25%,#30ff5d 39%,#30ffd9 50%,#30acff 64%,#6430ff 77%,#a230ff 88%,#ff00b2 100%);
+  background: linear-gradient(135deg, #ff3232 0%,#ffa230 12%,#fbff30 25%,#30ff5d 39%,#30ffd9 50%,#30acff 64%,#6430ff 77%,#a230ff 88%,#ff00b2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ff00b2',GradientType=1 );
+}
+
+li {
+  margin: 0 0 10px 0;
+}
+
+marquee {
+  font-size: 6em;
+  color: #ff1890;
+}
